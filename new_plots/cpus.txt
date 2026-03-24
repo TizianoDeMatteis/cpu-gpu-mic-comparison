@@ -1,0 +1,9 @@
+# year dp_tflops sp_tflops fp16_tflops fp8_tflops int8_tops cores mem_bw_GBs power_w transistors_b name abbr ref
+2010 0.08 0.16 NaN NaN NaN 6 32 130 1.17 "Xeon X5680" "X5680" https://ark.intel.com/products/47922
+2012 0.19 0.37 NaN NaN NaN 8 51 135 2.27 "Xeon E5-2690" "E5-2690" https://ark.intel.com/products/64595+https://github.com/karlrupp/cpu-gpu-mic-comparison/
+2014 0.35 0.70 NaN NaN NaN 18 68 145 5.56 "Xeon E5-2699 v3" "E5-2699v3" https://ark.intel.com/products/81060
+2016 0.77 1.54 NaN NaN NaN 22 76 145 7.20 "Xeon E5-2699 v4" "E5-2699v4" https://ark.intel.com/products/91317+https://github.com/karlrupp/cpu-gpu-mic-comparison/ 
+2017 2.24 4.48 NaN NaN NaN 28 128 205 19.20 "Xeon Platinum 8180" "8180" https://ark.intel.com/products/120521+https://github.com/karlrupp/cpu-gpu-mic-comparison/ 
+2019 3.48 6.96 NaN NaN NaN 64 204 225 19.20 "AMD EPYC 7742" " EPYC 7742" https://www.amd.com/en/products/cpu/amd-epyc-7742+https://www.waredb.com/processor/amd-epyc-7742
+2021 3.58 7.17 NaN NaN NaN 64 204 280 39.50 "AMD EPYC 7763" "EPYC 7763" https://www.amd.com/en/products/cpu/amd-epyc-7763+https://www.waredb.com/processor/amd-epyc-7763
+2023 6.35 12.7 NaN NaN 50.7 128 460 360 90.00 "AMD EPYC 9754" "EPYC 9754" https://www.amd.com/en/products/cpu/amd-epyc-9754+https://www.waredb.com/processor/amd-epyc-9754

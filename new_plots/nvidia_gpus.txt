@@ -1,0 +1,11 @@
+# year dp_tflops sp_tflops fp16_tflops fp8_tflops int8_tops cores mem_bw_GBs power_w transistors_b name abbr ref
+2010 0.52 1.03 NaN NaN NaN 14 144 225 3.00 "Tesla M2090" "M2090" https://www.nvidia.com/docs/IO/43395/nvidia-tesla-m2090-datasheet.pdf
+2012 1.31 3.95 NaN NaN NaN 13 208 225 7.10 "Tesla K20X" "K20X" https://www.nvidia.com/content/PDF/kepler/Tesla-K20X-BD-06265-001_v03.pdf
+2014 1.43 4.29 NaN NaN NaN 15 288 235 7.10 "Tesla K40" "K40" https://www.nvidia.com/content/PDF/tesla/Tesla-K40-Active-BD-06949-001_v05.pdf
+2016 5.30 10.60 21.20 NaN 170.0 56 732 300 15.30 "Tesla P100 SXM" "P100" https://images.nvidia.com/content/pdf/tesla/whitepaper/pascal-architecture-whitepaper.pdf
+2017 7.80 15.70 125.00 NaN 125.0 80 900 300 21.10 "Tesla V100 SXM" "V100" https://images.nvidia.com/content/volta-architecture/pdf/volta-architecture-whitepaper.pdf
+2020 9.70 19.50 312.00 NaN 624.0 6912 2039 400 54.20 "A100 SXM" "A100" https://www.nvidia.com/content/dam/en-zz/Solutions/Data-Center/a100/pdf/nvidia-a100-datasheet-us-nvidia-1758950-r4-web.pdf
+2022 34.00 67.00 1979.00 3958.00 3958.0 16896 3350 700 80.00 "H100 SXM" "H100" https://www.nvidia.com/en-us/data-center/h100/ 
+2024 37.00 75.00 4500.00 9000.00 9000.0 18944 4100 NA NA "B200" "B200" https://www.techpowerup.com/gpu-specs/b200.c4210
+# TODO recheck everything, transistor count can be wrong. For B200 these are estimates
+# FP16 and lower are considered to be tensor operations

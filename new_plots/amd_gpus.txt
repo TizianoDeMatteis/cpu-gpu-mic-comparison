@@ -1,0 +1,7 @@
+# year dp_tflops sp_tflops fp16_tflops fp8_tflops int8_tops cores mem_bw_GBs power_w transistors_b name abbr ref
+2012 0.95 3.79 NaN NaN NaN 32 264 225 4.31 "FirePro S9150" "S9150" https://www.amd.com/system/files/documents/firepro-s9150-datasheet.pdf
+2014 2.62 5.24 NaN NaN NaN 44 320 235 6.20 "FirePro W9100" "W9100" https://www.amd.com/system/files/documents/firepro-w9100-datasheet.pdf
+2016 0.91 3.64 NaN NaN NaN 64 484 300 12.50 "Radeon Instinct MI25" "MI25" https://www.amd.com/system/files/documents/radeon-instinct-mi25-datasheet.pdf
+2018 7.38 14.75 NaN NaN NaN 64 1024 300 13.20 "Radeon Instinct MI60" "MI60" https://www.amd.com/system/files/documents/instinct-mi60-datasheet.pdf
+2021 23.50 47.00 383.00 NaN NaN 110 3200 500 58.20 "Instinct MI250X" "MI250X" https://www.amd.com/system/files/documents/amd-instinct-mi250x-datasheet.pdf
+2023 47.90 95.80 1300.00 NaN NaN 146 5300 550 153.00 "Instinct MI300X" "MI300X" https://www.amd.com/system/files/documents/instinct-mi300x-datasheet.pdf
