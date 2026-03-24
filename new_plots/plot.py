@@ -2,6 +2,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 from adjustText import adjust_text
+from matplotlib.ticker import ScalarFormatter, LogLocator, NullFormatter
+
 
 # ------------------------------------------------------------
 # Configuration
@@ -75,6 +77,9 @@ def plot_metric(metric, ylabel, title, outfile):
 
         color = VENDOR_COLORS.get(vendor, "black")
 
+
+
+
         plt.plot(g["year"], g[metric], marker="o", linewidth=3, label=vendor, color=color)
 
         # ----------------------------
@@ -119,8 +124,29 @@ def plot_metric(metric, ylabel, title, outfile):
             # arrowprops=dict(arrowstyle="->", color='r', lw=0.5)
         )
      
-
     plt.yscale("log")
+    # turn off scientific notation
+    ax = plt.gca()
+
+    # Major ticks
+    ax.yaxis.set_major_locator(LogLocator(base=10))
+
+    formatter = ScalarFormatter()
+    formatter.set_scientific(False)
+    formatter.set_useOffset(False)
+    ax.yaxis.set_major_formatter(formatter)
+
+    # Minor ticks
+    ax.yaxis.set_minor_locator(LogLocator(base=10, subs=[2, 5]))
+    ax.yaxis.set_minor_formatter(NullFormatter()) # add here formatter to show the ticks
+    ax.minorticks_on()
+
+    # Make ticks visible
+    ax.tick_params(axis='y', which='minor', length=4, width=1)
+    ax.tick_params(axis='y', which='major', length=7, width=1.2)
+    
+    ax.tick_params(axis='y', which='minor', left=True)
+
     plt.xlabel("Year")
     plt.ylabel(ylabel)
     plt.title(title)
@@ -128,6 +154,7 @@ def plot_metric(metric, ylabel, title, outfile):
     plt.tight_layout()
     plt.savefig(outfile + ".png", dpi=300)
     plt.savefig(outfile + ".pdf")
+    print(ax.get_ylim())
     plt.close()
 
 
